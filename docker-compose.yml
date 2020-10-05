@@ -1,0 +1,13 @@
+version: '3.2'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: api.golang-clean-architecture.dev
+    env_file: .env
+    ports:
+      - 8002:8000
+    volumes:
+      - .:/app
