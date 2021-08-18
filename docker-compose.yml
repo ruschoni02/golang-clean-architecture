@@ -11,3 +11,4 @@ services:
       - 8002:8000
     volumes:
       - .:/app
+
